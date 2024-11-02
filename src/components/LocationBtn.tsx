@@ -1,14 +1,14 @@
 "use client";
-import axios from "axios";
+
 import Image from "next/image";
-import React, { useState } from "react";
+
 import location from "@/assets/icons/location.png";
 import { useRouter } from "next/navigation";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 
 import { show, setLocation, CounterState } from "@/redux/locationSlice";
 import { RootState } from "@/redux/store";
-import { error } from "console";
+
 const LocationBtn = () => {
   const dispatch = useAppDispatch();
   // const [loading, setLoading] = useState(false);
