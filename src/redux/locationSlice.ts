@@ -48,6 +48,7 @@ export const locationSlice = createSlice({
       .addCase(setLocation.pending, (state) => {
         state.loading = true;
       })
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .addCase(setLocation.fulfilled, (state, action: PayloadAction<any>) => {
         state.loading = false;
         // تحديث الحالة بالقيم الجديدة
